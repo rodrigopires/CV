@@ -1,0 +1,147 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage [brazil]{babel}     % nomes e hifenação em português
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage[utf8]{inputenc}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+\usepackage[default]{lato}
+
+% Set your name here
+\def\name{\textbf{Marcelo} de Brito Soares \textbf{Almeida}}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{https://github.com/marcelopazzo/CV}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  %pdfkeywords = {computer science, software, development},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+%% \renewenvironment{itemize}{
+%%   \begin{list}{}{
+%%     \setlength{\leftmargin}{1.5em}
+%%   }
+%% }{
+%%   \end{list}
+%% }
+
+\begin{document}
+
+\begin{flushright}
+
+{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Celular: & +55 85 8122-5610 \\
+    Telefone: & +55 85 3021-2992 \\
+    Email: & \href{mailto:marcelopazzo@gmail.com}{\tt marcelopazzo@gmail.com} \\
+%    Página Web: & \href{http://www.marcelopazzo.com/}{\tt http://www.marcelopazzo.com/} \\
+  \end{tabular}
+\end{minipage}
+\end{flushright}
+
+\section*{Formação acadêmica}
+
+\begin{itemize}
+  \item Bacharelado em Ciências da Computação, Universidade Federal do Ceará, 2008.
+\end{itemize}
+
+\section*{Habilidades}
+\begin{itemize}
+  \item Tecnologias Oracle (Plataforma Java - J2SE, Oracle Database) 
+  \item Tecnologias Microsoft (C\# para Framework .NET e Platforma Mono)
+  \item Unix (Linux, Solaris)
+  \item Linguagens de Programação: Ruby, Python, PHP, C, C++, C\#, Java, Scheme, Shell
+  \item Experiência com metodologia de desenvolvimento ágil (SCRUM)
+\end{itemize}
+
+\section*{Experiência profissional}
+\subsection*{CPQi}
+Analista de Sistemas - Janeiro/2009 - Presente
+\begin{itemize}
+\item Um ano como Lider Técnico de uma equipe distribuída
+\item Mais de dois anos trabalhando com desenvolvimento de customizações para o Calypso (Java e Oracle)
+\item Desenvolvimento de aplicações em Ruby on Rails para duas grandes empresas de apostas da Europa 
+\end{itemize}
+
+\subsection*{SecrelNet Internet Ltda}
+ Desenvolvedor - Outubro/2007 - Janeiro/2009
+\begin{itemize}
+\item Desenvolvimento de middlewares e web services para automatização e administração remota de servidores em Shell e C\#, rodando com mono.
+\item Desenvolvimento de aplicações PHP usando o framework Symfony
+\item Manutenção do Webmail dos clientes
+\end{itemize}
+
+\subsection*{Hospital Universitário Walter Cantídio - UFC}
+Desenvolvedor - Junho/2006 - Novembro/2006
+\begin{itemize}
+\item Criação do site do Hospital (PHP)
+\end{itemize}
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Última atualização: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
